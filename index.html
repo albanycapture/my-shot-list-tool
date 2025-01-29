@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding Shot List Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="shot-list-generator">
+    <h1>Wedding Photography Shot List</h1>
+
+    <form id="shot-list-form">
+      <label for="couple-names">Couple's Names:</label>
+      <input type="text" id="couple-names" name="couple-names"><br><br>
+
+      <label for="wedding-date">Wedding Date:</label>
+      <input type="date" id="wedding-date" name="wedding-date"><br><br>
+
+      <label for="wedding-venue">Wedding Venue:</label>
+      <input type="text" id="wedding-venue" name="wedding-venue"><br><br>
+
+      <label for="wedding-style">Wedding Style:</label>
+      <select id="wedding-style" name="wedding-style">
+        <option value="formal">Formal</option>
+        <option value="rustic">Rustic</option>
+        <option value="boho">Boho</option>
+        <option value="modern">Modern</option>
+        <option value="other">Other</option>
+      </select><br><br>
+
+      <label>Must-Have Shots:</label><br>
+      <input type="checkbox" id="first-look" name="must-have" value="First Look"> <label for="first-look">First Look</label><br>
+      <input type="checkbox" id="family-portraits" name="must-have" value="Family Portraits"> <label for="family-portraits">Family Portraits</label><br>
+      <input type="checkbox" id="cake-cutting" name="must-have" value="Cake Cutting"> <label for="cake-cutting">Cake Cutting</label><br>
+      <input type="checkbox" id="first-dance" name="must-have" value="First Dance"> <label for="first-dance">First Dance</label><br>
+      <input type="checkbox" id="golden-hour" name="must-have" value="Golden Hour Portraits"> <label for="golden-hour">Golden Hour Portraits</label><br>
+      <input type="checkbox" id="other-shots" name="must-have" value="Other"> <label for="other-shots">Other:</label>
+      <input type="text" id="other-shots-text" name="other-shots-text"><br><br>
+
+      <label for="family-friends">Important Family Members/Friends:</label>
+      <textarea id="family-friends" name="family-friends"></textarea><br><br>
+
+      <label for="photo-ideas">Specific Photo Ideas/Inspiration:</label>
+      <textarea id="photo-ideas" name="photo-ideas"></textarea><br><br>
+
+      <label for="dont-want">Shots You Don't Want (Optional):</label>
+      <textarea id="dont-want" name="dont-want"></textarea><br><br>
+      
+      <button type="button" id="generate-button">Generate Shot List</button>
+    </form>
+
+    <div id="shot-list-output" style="display:none;">
+      <h2>Your Customized Shot List</h2>
+      <div id="shot-list-content"></div>
+      <button type="button" id="download-button">Download as PDF</button> 
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
