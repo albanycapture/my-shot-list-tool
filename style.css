@@ -45,3 +45,17 @@ button {
   padding: 20px;
   border-radius: 5px;
 }
+
+/* Checklist Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
