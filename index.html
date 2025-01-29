@@ -15,14 +15,60 @@
       <label for="wedding-date">Wedding Date:</label>
       <input type="date" id="wedding-date" name="wedding-date"><br><br>
 
+      <label for="venue">Venue:</label>
+      <input type="text" id="venue" name="venue"><br><br>
+
+      <label for="party-size">Party Size (approx.):</label>
+      <input type="number" id="party-size" name="party-size"><br><br>
+
+      <label for="engagement-session">Having an Engagement Session?</label>
+      <select id="engagement-session" name="engagement-session">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+
+      <label for="first-look">Doing a First Look?</label>
+      <select id="first-look" name="first-look">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+
+      <label for="traditional-ceremonies">Any Traditional Ceremonies?</label>
+      <input type="text" id="traditional-ceremonies" name="traditional-ceremonies"><br><br>
+
+      <label for="family-shots">Want Family Shots?</label>
+      <select id="family-shots" name="family-shots">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+
+      <label for="bridal-party">Having a Bridal Party?</label>
+      <select id="bridal-party" name="bridal-party">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+      
+      <label for="bridal-party-size">How many in the Bridal Party?</label>
+      <input type="number" id="bridal-party-size" name="bridal-party-size"><br><br>
+
+      <label for="bridal-shower">Bridal Shower?</label>
+      <select id="bridal-shower" name="bridal-shower">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select><br><br>
+
+      <label for="wedding-type">Type of Wedding:</label>
+      <select id="wedding-type" name="wedding-type">
+        <option value="Classical">Classical</option>
+        <option value="Minimalist">Minimalist</option>
+        <option value="Modern">Modern</option>
+        <option value="Other">Other</option>
+      </select><br><br>
+      
       <button type="button" id="generate-button">Generate Shot List</button>
     </form>
 
-    <div id="shot-list-output" style="display:none;">
-      <h2>Your Customized Shot List</h2>
-      <div id="shot-list-content"></div>
-      <button type="button" id="download-button">Download as PDF</button>
-    </div>
+    <div id="shot-list-content"></div>
   </div>
 
   <script src="script.js"></script>
